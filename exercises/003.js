@@ -20,6 +20,12 @@ Starter Code:
 */
 
 function fromListToObject(array) {
-  // your code here
+  var returnObj = {}
 
+  array.forEach(function(obj) {
+    for (var i = 0; i < obj.length; i++) {
+      returnObj[obj[0]] = obj[obj.length -1]
+    }
+  })
+  return returnObj
 }
