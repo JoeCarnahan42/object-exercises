@@ -23,5 +23,9 @@ function transformFirstAndLast(array) {
 */
 
 function transformFirstAndLast(array) {
-  //your code here
+  var objectReturn = {}
+
+  objectReturn[array[0]] = array[array.length - 1]
+
+  return objectReturn
 }
